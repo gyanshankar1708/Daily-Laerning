@@ -1,0 +1,12 @@
+6th October 2024
+
+Learned about Binary search.
+Lower Bound and upper bound.
+Number of element in the sorted array.
+
+
+Binary Search -> Binary Search is a searching algorithm in a limited search space.
+Time complexity -> O(log n) explanation -> Let an array have 64 element in it and i have to search an item  in that array.
+So by Binary searcch, we have to divide that array in 2 part and we will consider any of that part and keep doing till when we get the element.
+so for searching in that element we have to perform 6 operation i.e 64 -> 32 -> 16 -> 08 -> 04 -> 02 -> 01.
+so we can say that the time taken for searching out of n element will be O(log2 n) . where 2 is the base of the logaroithm.
