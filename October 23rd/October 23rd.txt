@@ -1,0 +1,5 @@
+On 23rd october. I had solved 2 question on binary search. 
+1st question was smallest character greater than target in an character array. Question number 744
+2nd question was Special array with X element greater than or equal to x. Question number 1608
+In 2nd Question we have to return the value of x such that an array consist of x element greater than x.
+The code is in Demo.java.
