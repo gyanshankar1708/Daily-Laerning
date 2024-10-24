@@ -1,0 +1,9 @@
+Today I learnt about Binary search in Matrix and solved 2 problem Search in 2D array and search in 2d aray II 
+
+In 1st question we just have to hypothetically convert 2d array in 1 D array and implement Binary search in it.
+for calculating row forrmula is row = mid/M; and for calculating col formula is col = mid%M;
+where mid is the mid index where we have to check and M is the number of column.
+Time complexity = O(M Log N)
+
+In 2nd question we have to stand at (0,M-1) co-ordinate and then we have to check if we can decrease the col or increase the row to get the element.
+Time complexity = O(M+N)
