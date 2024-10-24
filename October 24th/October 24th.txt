@@ -1,4 +1,4 @@
-Today I learnt about Binary search in Matrix and solved 2 problem Search in 2D array and search in 2d aray II 
+Today I learnt about Binary search in Matrix and solved 2 problem Search in 2D array(74) and search in 2d aray II(240) 
 
 In 1st question we just have to hypothetically convert 2d array in 1 D array and implement Binary search in it.
 for calculating row forrmula is row = mid/M; and for calculating col formula is col = mid%M;
