@@ -1,0 +1,21 @@
+DOM in JavaScript
+
+Child, parent and Node
+
+
+childNodeode - Child node is the child tag of any tag.
+            Empty Space between any tag is also considerd as child node as #text.
+    firstChild - firstChild returns the 1st child node of any node
+    lastChild - lastChild returns the last child node of any node.
+
+    Whenever we are using childnode we are getting #text which is not used by us. so we want to not to show that node so we use firstElementChild instead of firstChild and same lastElementChild instead of lastChild.
+
+
+ parentNode  - It returns the parent node of that node
+
+ children - Returns all the list of element childnodes of any element
+
+ nextElementSibling - Returns the immediate next element sibling of that element
+ previousElementSibling = Returns the immediate previous element sibling of that element
+
+ Sibling also contains text node and coment node etc so if we use nextSibling or previousSibling we may get #text as result.
