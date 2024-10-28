@@ -1,0 +1,23 @@
+Selectors in JS
+
+
+document.getElementsByClassName("<ClassName>") -> This function selects all the element whose class name is given as parameter and returns as element node.
+                
+
+document.getElementById("<IdName>") -> This function selects the element whose id name is given as parameter.
+
+
+document.querySelector("<parameter>">) ->  In query Selector we have to give parameter same as CSS like for class name we have to input .className and for id #IdName etc. In case of Class Name querySelector only select 1st element whose class name is given in parameter.
+
+If we want to use querySelector on all element whose class name is box we have to use querySelectorAll.
+But querySelectorAll returns HTML collections and we can not any style function directly on HTML collections so we have to use for each loop for performing out task.
+
+Not only for each loop we can use any loop instead of for each.
+
+we also have many similar type of selectors like getElementByTagName(), getElementByName() 
+
+Matches, closest, Contains
+
+<elementName>.matches("<CSS Selector>")  -> returns true if element matches the given CSS Selector.
+<elementname>.closest("CSS Selector") -> returns the closest parent which matches the given CSS selector.
+<elementName>.contains("<ElementName>") -> returns true if element name of parameter contains in the given element. like #red is in .container so if we check it returns true.
