@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .colorred{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container check">
+        <div class="box" data-designby="Gyanshankar">Hey I am a box</div>
+        <div class="box">Hey I am a box</div>
+    </div>
+    <script src="Demo.js"></script>
+    <script>
+        // let div = document.createElement("div") // Create an element of parameter value.
+        // div.innerHTML = "I have been <b>inserted</b>"
+        // div.setAttribute("class","created")
+        // document.querySelector(".container").append(div) // Add the given element in the last of that element.
+        let cont = document.querySelector(".container");
+        cont.insertAdjacentHTML("afterend","<b>Khelega Free fire</b> hara dunga")
+    </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+INSERTING AND REMOVING ELEMENT IN HTML
+
+document.querySelector("<Selector>").innerHTML -> returns the HTML which is present in the selected HTML element.
+    You can use any selector not only querySelector.
+
+document.querySelector("<Selector>").innerText -> returns the text present ik selected HTML element.
+
+document.querySelector("<Selector>").outerHTML -> returns the HTML which is present inside the selected HTML element along with the element itself.
+
+document.querySelector("<Selector>").tagName -> returns the tag name of selected HTML element.
+document.querySelector("<Selector>").nodeName -> returns the node name of the selected HTML element. 
+
+Difference between tagName and nodeName
+
+tagName - only exist in element node.
+nodeName - exist in any type of node (eg - text,element,comment,etc)
+
+document.querySelector("<Selector>").textContent -> returns all the text content present inside the selected HTML element including of blank space, etc.
+
+document.querySelector("<Selector>").hidden = <true/false>  -> If true set the hidden HTML attribute to the selected element.
+
+document.querySelector("<Selector>").innerHTML = "<New Element>" -> changes the value of the HTML inside the selected element.
+
+document.querySelector("<Selector>").hasAttribute("<attribute>") -> retruns true if attribute will be present in the selected Element else false.
+
+we have similar function hasAttribute() which returns the value of the searched attribute, setAttribute(<attribute>,<value>) which set the attribute, removeAttribute() which remove the searched attribute, attribute which returns all the attributes present in the selected element.
+
+If you want to store any data in HTML then you can add data attribute in HTML which add youor information as an attribute without throwing any error.
+
+
+INSERTION IN HTML
+
+node.append(e) -> append at the end of the node.
+node.prepend(e) -> Insert at the begining of the node.
+node.before(e) -> Insert before node.
+node.after(e) -> Insert after node.
+node.replaceWith(e) -> Replace node with the given node.
+
+Insert Adjacent
+eg - 
+    let con = document.querySelector(".container);
+    con.insertAdjacentHTML("beforeBegin","<b>Khelega Free fire</b>);
+ It insert the given HTML in 4 position and the position is given as paramter here position is before begin.
+ Four positions are:-
+    1. "beforeBegin" -> insert before selected element
+    2. "afterBegin" -> insert in the begining inside the selected element.
+    3. "beforeEnd" -> insert in the last inside the selected element.
+    4. "afterEnd" -> insert the given HTML after the selected element.
+
+Not only insertAdjacentHTML there is also insertAdjacentElement where you can insert element insertAdjacentText where you can insert text. Syntax is same for every insertAdjacent function.
+
+If we want to remove any element then we have to run remove command for selected element
+Syntax - element.remove()
+
+classList and className
+
+element.classList -> retruns the list of all the class name of the selected element.
+element.className -> returns the class name of the selected element.
+
+If we want to add or remove any class to the selected element by javaScript then we add/remove function for this
+
+eg - 
+    element.classList.add/remove("class name") -> if we use add then it add the given class name to the selecvted element and when we use remove then it removes the given class name from selected element.
+
+if the given class already exist or we use multiplel command to add same class name in the selected element then it does not add anything. 
+
+toggle 
+
+if we run element.classList.toggle("class name") then if class name exists then it remove and if does not exist then add the given class name to the selected element.
