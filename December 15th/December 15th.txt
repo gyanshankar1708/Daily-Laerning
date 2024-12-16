@@ -1,0 +1,29 @@
+Events in JavaScript
+
+A specific tast will occur on a specific event. Basically a function will be called as per specific event. that the library function used for assigning the event is eventListner
+
+let btn = getElementByInd("btn");
+btn.addEventListner("click",()=>{
+    alert("You had clicked");
+});
+
+In this exeample if you click on the element whose id is btn then alert will occur.
+
+There are many types of eventListner like click,dblclick, mouseover, mouseleave, etc 
+
+Not ont mouse eventListner is also for keyboard events.
+
+
+
+Event Bubbling :-
+
+If 3 div are made with respective class name container>ChildContainer>ChildContainer
+so if i click on child then the eventListner of child will trigger but also the eventListner on their parents will be trigger and the order will be child>ChildContainer>container
+
+If you dont want bubbling then you have to take event as parameter in the function and then have to stopPropagation() in that eventListner function
+
+setInterval(fn,interval) -> If i want to run any function in fixed interval of time then i have to run setInterval function and have to put interval in millisecond.
+
+setTimeout(fn,timeout) -> If i want to run any particular function after cetrtain period of time and once. then i have to use setTimeout function and i have to put timeout in millisecond.
+
+If i want to cancel timeout and interval we have to run clearTimeout() and clearInterval() and have to put the returning number value.
